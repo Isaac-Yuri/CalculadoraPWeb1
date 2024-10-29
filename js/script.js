@@ -11,7 +11,7 @@ botao.addEventListener("click", (e) => {
 const operacoes = {
   somar: (n1, n2) => n1 + n2,
   subtrair: (n1, n2) => n1 - n2,
-  dividir: (n1, n2) => n1 / n2,
+  dividir: (n1, n2) => n2 !== 0 ? n1 / n2: "Não é possível dividir por zero!",
   multiplicar: (n1, n2) => n1 * n2,
 };
 
@@ -22,6 +22,11 @@ function calcular(operacao, a, b) {
 function fazerOperacao() {
   let a = parseInt(num1.value);
   let b = parseInt(num2.value);
+
+  if (isNaN(a) || isNaN(b)) {
+    alert("Valores não inseridos")
+    return
+  }
 
   const { somar, dividir, multiplicar, subtrair } = operacoes;
 
