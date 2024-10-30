@@ -2,7 +2,7 @@
 
 <div align="center">
     <a href="https://isaac-yuri.github.io/CalculadoraPWeb1/">
-        <img width="80%" src="./images/image.png" alt="Exemplo imagem">
+        <img width="50%" src="./images/image.png" alt="Exemplo imagem">
     </a>
 </div>
 
